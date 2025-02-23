@@ -4,7 +4,7 @@ services:
     image: postgres
     restart: always
     environment:
-      - POSTGRES_USER = postgres
-      - POSTGRES_PASSWORD = 12217355
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12217355
     ports:
       - '5432:5432'
