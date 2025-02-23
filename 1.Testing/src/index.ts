@@ -3,7 +3,7 @@ import { prisma } from './db';
 export const app = express();
 app.use(express.json());
 
-// this is the
+
 app.post("/sum", async(req:any,res:any) =>{
     const {a,b} = req.body;
 
@@ -31,6 +31,6 @@ app.post("/sum", async(req:any,res:any) =>{
 
     })
 
-    return res.status(200).json({answer,id: data.id})
+    return res.status(200).json({result:answer,id: data.id})
 
 })

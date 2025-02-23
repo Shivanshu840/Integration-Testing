@@ -11,7 +11,7 @@ describe("this is for sum test", ()=>{
         })
 
         expect(status).toBe(200);
-        expect(body).toEqual({answer:3, id:expect.any(String)});
+        expect(body).toEqual({result:3, id:expect.any(String)});
     });
 
 })
