@@ -19,8 +19,14 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
+    - name: Set up Docker Compose
+      uses: docker/setup-qemu-action@v2
+
+    - name: Ensure Docker Compose is available
+      run: docker-compose version
+
     - name: Set script permissions
-      run: chmod +x 1.Testing/script/run-integration.sh
+      run: chmod +x 1.Testing/script/*
 
 
     - name: Copy .env.example to .env
