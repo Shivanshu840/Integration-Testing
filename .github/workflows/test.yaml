@@ -19,8 +19,7 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
-    - name: Set up Docker Compose
-      uses: docker/setup-qemu-action@v2
+    
 
 
     - name: Copy .env.example to .env
